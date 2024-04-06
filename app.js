@@ -1,38 +1,16 @@
-// function сложить() {
-//     let x1 = parseFloat(prompt("Введите первое число для x:"));
-//     let x2 = parseFloat(prompt("Введите второе число для x:"));
-//     let y1 = parseFloat(prompt("Введите первое число для y:"));
-//     let y2 = parseFloat(prompt("Введите второе число для y:"));
 
-//     let суммаX = x1 + x2;
-//     let суммаY = y1 + y2;
-
-//     alert("Сумма x: " + суммаX + ", сумма y: " + суммаY);
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
 // }
-// сложить();
+// let word = prompt("Введите слово");
+// let reversedWord = reverseString(word);
+// console.log( reversedWord);
 
-// function умножитьНа3() {
-//     let число1 = parseFloat(prompt("Введите первое число:"));
-//     let число2 = parseFloat(prompt("Введите второе число:"));
-//     let число3 = parseFloat(prompt("Введите третье число:"));
-
-//     let результат1 = число1 * 3;
-//     let результат2 = число2 * 3;
-//     let результат3 = число3 * 3;
-
-//     alert("Первое число умноженное на 3: " + результат1 + "\n" +
-//           "Второе число умноженное на 3: " + результат2 + "\n" +
-//           "Третье число умноженное на 3: " + результат3);
-// }
-// умножитьНа3();
-
-function выводЧетныхЧисел() {
-    let числа = prompt("Введите числа через запятую:");
-    let массивЧисел = числа.split(',').map(Number);
-    
-    let четныеЧисла = массивЧисел.filter(число => число % 2 === 0);
-
-    alert("Четные числа: " + четныеЧисла.join(', '));
-}
-
-выводЧетныхЧисел();
+function repeatWordByLetterCount(word) {
+    let letterCount = word.length;
+    let repeatedWord = word.repeat(letterCount);
+    return repeatedWord;
+  }
+  let inputWord = "fair";
+  let result = repeatWordByLetterCount(inputWord);
+  console.log(result); 
